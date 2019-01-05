@@ -10,6 +10,7 @@ ioc
  
 ### 示例
 ```typescript
+	const ioc = new Ioc()
     class HttpService implements Injectable {
         get() {
             return 'get'

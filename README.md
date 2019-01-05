@@ -1,5 +1,11 @@
-ioc
-> 一个支持懒实例化的`ioc`框架
+### ioc
+> ts 写的依赖注入框架，支持服务的懒实例化
+
+![Build Status](https://travis-ci.org/followWinter/ioc.svg?branch=master)
+
+---
+ 
+
 
 ### API说明
 - `Ioc.constructor():Ioc`: 实例化一个`ioc`容器

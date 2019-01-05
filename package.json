@@ -6,7 +6,8 @@
   "scripts": {
     "eslint": "npx eslint lib --ext .ts",
 	"build": "npx rollup -c",
-	"precommit": "npm run esling"
+	"precommit": "npm run esling",
+	"test": "npx jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

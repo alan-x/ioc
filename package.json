@@ -1,10 +1,12 @@
 {
   "name": "ioc",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/ioc.bundle.js",
   "license": "MIT",
   "scripts": {
-    "eslint": "npx eslint lib --ext .ts"
+    "eslint": "npx eslint lib --ext .ts",
+	"build": "npx rollup -c",
+	"precommit": "npm run esling"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -14,13 +16,16 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "eslint": "^5.12.0",
+    "eslint-config-alloy": "^1.4.2",
     "eslint-plugin-typescript": "^0.14.0",
     "jest": "^23.6.0",
+    "rollup": "^1.0.1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-typescript": "^1.0.0",
     "ts-jest": "^23.10.5",
     "typescript": "^3.2.2",
-    "typescript-eslint-parser": "^21.0.2",
-    "eslint-config-alloy": "^1.4.2"
+    "typescript-eslint-parser": "^21.0.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
